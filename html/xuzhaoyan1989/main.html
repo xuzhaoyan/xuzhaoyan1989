@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS实现弹出窗口，页面变灰不可操作</title>
+<script type="text/javascript" src="js/jquery-v3.4.1.js"></script>
+<style type="text/css">
+    .opacity_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0.6;
+        margin: auto;
+        z-index: 1024;
+        display: none;
+    }    
+    #dialog {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        z-index: 1025;
+    }
+</style>
+<script type="text/javascript">
+    function alertWin(){
+        $(".opacity_bg").show(); // 显示背景层,覆盖当前页面内容
+        $("#dialog").load("../jsp/alert.html");    // 加载弹出页
+    }
+    function iclose(){
+        $(".opacity_bg").hide(); // 隐藏背景层
+        $("#dialog").empty().hide(); // 清除弹出页
+    }
+</script>
+</head>
+<body>
+    <div>
+        <div class="opacity_bg"></div>
+        <div id="dialog"></div>
+        <button onclick="alertWin();">弹出窗口</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/newstyle.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="js/jquery-v3.4.1.js"></script> -->
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-header flex-space">
+                <!-- <img src="img/03.jpg" alt="" width="70px"> -->
+                <div class="logo">
+
+                </div>
+                <button id="btn_logout" class="button">ログアウト</button>
+            </div>
+            <div class="sidebar-content1">
+                <ul>
+                    <li class="bc-blue">資格管理</li>
+                    <li><a href="">資格検索</a></li>
+                    <li><a href="">受験計画・実績検索</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-content2">
+                <ul>
+                    <li>社員番号</li>
+                    <li class="text-center">090000088</li>
+                    <li>名前</li>
+                    <li class="text-center">大和太郎</li>
+                    <li>会社名</li>
+                    <li class="text-center">株式会社</li>
+                    <li>所属部署</li>
+                    <li class="text-center">開発部</li>
+                </ul>
+            </div>
+            <div class="sidebar-content3">
+                <ul>
+                    <li class="bc-blue">ヘルプ</li>
+                    <li><a href="">問合せ</a></li>
+                    <li><a href="">説明資料</a></li>
+                    <li class="bc-blue">リンク</li>
+                    <li><a href="">資格申請(受験・合否)</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="container" id="page1">
+            <h2>受験計画</h2>
+            <div class="input-box card">
+                <h3>
+                    <span>検索条件</span>
+                    <button class="button bc-blue">検索</button>
+                    <button class="button bc-blue">CSV出力</button>
+                </h3>
+                <hr>
+                <form action="#">
+                    <div class="row">
+                        <label class="label" for="deploy">部署</label>
+                        <input id="select1" type="text" style="width:120px;">
+                        <button class="button bc-blue">選択</button>
+                        <button class="button bc-blue">削除</button>
+                        <input type="text" style="width:120px;">
+                    </div>
+                    <div class="row">
+                        <label class="label" for="user">社員</label>
+                        <input id="employee" type="" value="" style="width:120px;">
+                        <button id="select2" class="button bc-blue">選択</button>
+                        <button class="button bc-blue">削除</button>
+                        <input type="text" style="width:120px;">
+                    </div>
+                    <div class="row">
+                        <label class="label" for="date">計画期</label>
+                        <input id="date" type="text" value="">
+                    </div>
+                    <div class="radio-box">
+                        <span>リスト出力区分</span>
+                        <input id="plan1" type="radio" name="plan" value="p1">計画のみ
+                        <input id="plan2" type="radio" name="plan" value="p2">計画✙実績
+                    </div>
+                </form>
+            </div>
+            <div class="table-box">
+                <h3>検索結果
+                    <span>検索件数:208件</span>
+                </h3>
+                <table class="talbe table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="7">計画</th>
+                            <th colspan="3" class="onlyplan">実績</th>
+                        </tr>
+                        <tr>
+                            <th>期</th>
+                            <th>事業部名</th>
+                            <th>部署名</th>
+                            <th>社員番号</th>
+                            <th>氏名（漢字）</th>
+                            <th>資格名</th>
+                            <th>予定年月</th>
+                            <th>受験年月日</th>
+                            <th>認定年月日</th>
+                            <th>受験状況</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-v3.4.1.js"></script>
+        <script>
+            $("input[name=plan]").click(function () {
+                // alert("test");
+                hidetable();
+            })
+
+            function hidetable() {
+                // alert("test");
+                switch ($("input[name=plan]:checked").attr("id")) {
+                    case "plan1":
+                        $('tr').find('th:eq(9)').hide();
+                        $('tr').find('td:eq(9)').hide();
+                        $('tr').find('th:eq(8)').hide();
+                        $('tr').find('td:eq(8)').hide();
+                        $('tr').find('th:eq(7)').hide();
+                        $('tr').find('td:eq(7)').hide();
+                        $('.onlyplan').hide();
+                        break;
+                    case "plan2":
+                        $('tr').find('th:eq(9)').show();
+                        $('tr').find('td:eq(9)').show();
+                        $('tr').find('th:eq(8)').show();
+                        $('tr').find('td:eq(8)').show();
+                        $('tr').find('th:eq(7)').show();
+                        $('tr').find('td:eq(7)').show();
+                        $('.onlyplan').show();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
